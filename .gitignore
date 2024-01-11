@@ -102,3 +102,6 @@ dist
 
 # TernJS port file
 .tern-port
+
+# Certs
+mongoDb_test/keys/

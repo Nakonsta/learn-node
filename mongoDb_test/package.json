@@ -1,0 +1,36 @@
+{
+  "name": "pg_test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "prebuild": "cross-env rimraf tmp && mkdirp tmp/out",
+    "db:migrate": "migrate-mongo up",
+    "dev": "nodemon fs.js",
+    "start": "cross-env npm run db:migrate && node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "cli-table": "^0.3.11",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.3.1",
+    "draftlog": "^1.0.13",
+    "express": "^4.18.2",
+    "https": "^1.0.0",
+    "inquirer": "^9.2.12",
+    "knex": "^3.1.0",
+    "lodash": "^4.17.21",
+    "migrate-mongo": "^11.0.0",
+    "mkdirp": "^3.0.1",
+    "mongodb": "^6.3.0",
+    "pg": "^8.11.3",
+    "rimraf": "^5.0.5",
+    "walk": "^2.3.15",
+    "yargs": "^17.7.2"
+  }
+}
